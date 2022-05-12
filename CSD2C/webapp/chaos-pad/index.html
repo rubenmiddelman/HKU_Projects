@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>KAOSS PAD</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- LIBRARIES / SCRIPTS -->
+    <script src="../Library/socket_io.js"></script>
+    <script src="../Library/p5.js"></script>
+    <script src="../Library/addons/p5.dom.js"></script>
+    <script src="../oscLib.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+        input.horizontalSlider {
+            -webkit-appearance: slider-vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>KAOSS PAD</h1>
+
+    <!-- BUTTONS -->
+    <div id="switch">
+        <button onclick="setEffect(event, 1)" class="active">Low Pass</button>
+        <button onclick="setEffect(event, 2)">Band Pass</button>
+        <button onclick="setEffect(event, 3)">Tremelo</button>
+    </div>
+
+    <!-- Canvas will be created here -->
+    
+</body>
+
+</html>

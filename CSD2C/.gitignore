@@ -1,0 +1,5 @@
+*.o
+.DS_Store
+example
+bandpass/example
+tremelo/example

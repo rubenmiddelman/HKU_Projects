@@ -1,0 +1,102 @@
+/*
+    STYLE SCSS voor CSD2C eindopracht
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  font-size: 18px;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Oxanium", -apple-system, sans-serif;
+  background: #2a2a30;
+  color: #eee;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 640px;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  touch-action: none;
+}
+
+body * {
+  box-sizing: border-box;
+  font-family: "Oxanium", -apple-system, sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+@media (min-width: 640px) {
+  body {
+    left: calc(50% - 320px);
+  }
+}
+
+canvas {
+  border: #f33 solid 3px;
+  border-radius: 1rem;
+  height: auto;
+  box-shadow: 0 -2px 4px 3px rgba(12, 13, 17, 0.4), inset 0 11px 23px 0 rgba(57, 57, 57, 0.26);
+}
+
+#switch {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+#switch button {
+  margin: 0 3px;
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  background-image: radial-gradient(50% 200%, #6A7F99 50%, #4F637D 90%, #5E7187 117%);
+  border: 1px solid #78889B;
+  box-shadow: 0 -2px 4px 3px rgba(12, 13, 17, 0.4), inset 0 11px 23px 0 rgba(57, 57, 57, 0.26);
+  color: #eee;
+  border-radius: 0.5rem;
+}
+
+#switch button:active {
+  opacity: 0.8;
+}
+
+#switch button:first-child {
+  margin-left: 0;
+}
+
+#switch button:last-child {
+  margin-right: 0;
+}
+
+.active {
+  background-image: radial-gradient(50% 200%, #E99F65 50%, #A74F67 90%, #AE546D 117%) !important;
+  border: 1px solid #BF5C6A !important;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 1 0 1.5rem 0;
+  text-align: center;
+}
+
+label {
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+  display: block;
+  border: solid #eee 2px;
+  border-radius: 2px;
+  padding: 0.1rem 0 0 0;
+}
